@@ -47,6 +47,11 @@ if (isset($_GET['host'])) $request_host = $_GET['host'];
 if (isset($_GET['port'])) $request_port = $_GET['port'];
 if (isset($_GET['ip'])) $request_ip = $_GET['ip'];
 
+if (isset($_POST['url']))  $request_url  = $_POST['url'];
+if (isset($_POST['host'])) $request_host = $_POST['host'];
+if (isset($_POST['port'])) $request_port = $_POST['port'];
+if (isset($_POST['ip'])) $request_ip = $_POST['ip'];
+
 // Service requested by the user
 $service = (object) [
 	'host' => null,
